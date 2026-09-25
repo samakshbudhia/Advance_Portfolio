@@ -27,7 +27,9 @@
             --shadow-elegant: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
             --shadow-hover: 0 20px 50px -10px rgba(0, 0, 0, 0.7);
         }
-
+        body.dark-mode #contact .btn-primary {
+    background-color: #FFFFFF !important;
+}
         /* Convert hardcoded blue text opacities to white in dark mode */
         body.dark-mode .nav-links a,
         body.dark-mode .hero-desc,
