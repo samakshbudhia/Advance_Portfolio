@@ -178,7 +178,9 @@
             transition: color 0.3s;
         }
         .nav-links a:hover { color: var(--color-turquoise); }
-        @media (max-width: 768px) { .nav-links { display: none; } }
+        @media (max-width: 768px) { 
+    .nav-links a { display: none; } 
+}
 
         .hero {
             min-height: 100vh;
@@ -268,8 +270,7 @@
         }
         .btn-link:hover { color: var(--color-crimson); border-color: var(--color-crimson); }
 
-        .hero-image-wrapper { position: relative; max-width: 400px; margin: 0 auto; display: none; }
-        @media (min-width: 900px) { .hero-image-wrapper { display: block; } }
+        .hero-image-wrapper { position: relative; max-width: 400px; margin: 0 auto; display: block; }
         
         .hero-image {
             width: 100%;
@@ -468,4 +469,22 @@
         .social-links a:hover { color: var(--color-turquoise); }
 
         footer { background: var(--color-surface); border-top: 1px solid rgba(192, 107, 62, 0.2); padding: 40px 0; text-align: center; }
-        .footer-text { font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: rgba(15, 48, 87, 0.4); font-weight: 500; }\
+        .footer-text { font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: rgba(15, 48, 87, 0.4); font-weight: 500; }
+
+        @media (max-width: 768px) {
+    .bento-medium { 
+        flex-direction: column; 
+    }
+    
+    .bento-medium .content { 
+        width: 100%; 
+    }
+    
+    .bento-medium .img-container { 
+        width: 100%; 
+        position: relative; 
+        height: 250px; /* Gives the image adequate vertical space */
+        border-left: none;
+        border-top: 1px solid rgba(192, 107, 62, 0.1);
+    }
+}
